@@ -5,12 +5,19 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "bigbo",
+            "name": "bond6699",
             "email": "lomalbtn693301@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.8"
+    },
     "bin": [
-    	"bin/brain-games"
-    ]
+        "bin/brain-games"
+    ],
+    "autoload": {
+        "psr-4": {
+            "BrainGames\\Cli\\": "src/"
+        }
+    }
 }
