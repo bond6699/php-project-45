@@ -1,0 +1,12 @@
+{
+    "name": "hexlet/code",
+    "description": "Hexlet Project 1 | Brain Game",
+    "type": "project",
+    "authors": [
+        {
+            "name": "bigbo",
+            "email": "lomalbtn693301@gmail.com"
+        }
+    ],
+    "require": {}
+}
