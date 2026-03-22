@@ -2,11 +2,15 @@
     "name": "hexlet/code",
     "description": "Hexlet Project 1 | Brain Game",
     "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "bigbo",
             "email": "lomalbtn693301@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "bin": [
+    	"bin/brain-games"
+    ]
 }
