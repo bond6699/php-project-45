@@ -21,8 +21,12 @@
         "bin/brain-calc"
     ],
     "autoload": {
-	"files": [
-	    "src/Cli.php"
-	 ]
+        "files": [
+            "src/Cli.php",
+            "src/Engine.php"
+        ],
+        "psr-4": {
+            "Games\\": "src/Games/"
+        }
     }
 }

@@ -5,7 +5,7 @@
 
 ## Game Even
 
-[![asciicast]](https://asciinema.org/a/tjhwZy0QeWesq2fp)
+[![asciicast](https://asciinema.org/a/tjhwZy0QeWesq2fp.svg)](https://asciinema.org/a/tjhwZy0QeWesq2fp)
 
 ## Game Calc
 
