@@ -1,0 +1,60 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . "/../vendor/autoload.php";
+
+use function cli\line;
+use function cli\prompt;
+
+const MAX_WINS = 3;
+const MAX_RANDOM_NUMBER = 99;
+
+
+function getExpression(): string 
+{
+    $operations = ['+', '-', '*'];
+    $num1 = rand(1, MAX_RANDOM_NUMBER);
+    $num2 = rand(1, MAX_RANDOM_NUMBER);
+    $operation = $operations[array_rand($operations)];
+    
+    return "{$num1} {$operation} {$num2}";
+}
+function getCorrectAnswer(string $expression): string
+{
+    $parts = explode(" ", $expression);
+    $num1 = $parts[0];
+    $num2 = $parts[2];
+    $operation = $parts[1];
+
+    switch ($operation) {
+        case "*":
+            return $num1 * $num2;
+        case "+":
+            return $num1 + $num2;
+        case "-":
+            return $num1 - $num2;
+    }
+}
+
+function calcGame(): void
+{
+    $name = hello();
+    line('What is the result of the expression?');
+    $winCounter = 0;
+    while ($winCounter < MAX_WINS) {
+        $expression = getExpression();
+        $answer = prompt("Question: {$expression}");
+        $correctAnswer = getCorrectAnswer($expression);
+
+        if ($answer !== $correctAnswer) {
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'. Let's try again, {$name}!");
+            return;
+        }
+
+        $winCounter++;
+        line('Correct!');
+    }
+    line("Congratulations, {$name}!");
+}
+
+calcGame();
