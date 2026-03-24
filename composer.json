@@ -10,6 +10,9 @@
         }
     ],
     "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    },
     "bin": [
     	"bin/brain-games"
     ],
