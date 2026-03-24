@@ -1,0 +1,38 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . "/../vendor/autoload.php";
+
+use function cli\line;
+use function cli\prompt;
+
+const MAX_WINS = 3;
+const MAX_RANDOM_NUMBER = 99;
+
+function getCorrectAnswer(int $randomNumber): string
+{
+    return $randomNumber % 2 === 0 ? "yes" : "no";
+}
+
+function evenGame(): void
+{
+    $name = hello();
+    line('Answer "yes" if the number is even, otherwise answer "no".');
+    $winCounter = 0;
+    while ($winCounter < MAX_WINS) {
+        $randomNumber = rand(1, MAX_RANDOM_NUMBER);
+        $answer = prompt("Question: {$randomNumber}");
+        $correctAnswer = getCorrectAnswer($randomNumber);
+
+        if ($answer !== $correctAnswer) {
+            line("'{$answer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'. Let's try again, {$name}!");
+            return;
+        }
+
+        $winCounter++;
+        line('Correct!');
+    }
+    line("Congratulations, {$name}!");
+}
+
+evenGame();
