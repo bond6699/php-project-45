@@ -19,7 +19,7 @@ function runGame(string $description, $generateRound): void
         $correctAnswer = $round['answer'];
 
         $userAnswer = prompt("Question: {$question}");
-        if ($correctAnswer === $userAnswer) {
+        if ($correctAnswer == $userAnswer) {
             $winCounter++;
             line('Correct!');
         } else {

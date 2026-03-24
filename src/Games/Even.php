@@ -1,10 +1,8 @@
 <?php
 
-/*
 namespace Games;
 
 use function runGame;
-*/
 
 function generateEvenRound(): array
 {

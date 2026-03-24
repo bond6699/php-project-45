@@ -15,10 +15,13 @@ function generateCalcRound(): array
     switch ($operation) {
         case "*":
             $answer = $num1 * $num2;
+            break;
         case "+":
-            $answer =  $num1 + $num2;
+            $answer = $num1 + $num2;
+            break;
         case "-":
-            $answer =  $num1 - $num2;
+            $answer = $num1 - $num2;
+            break;
     }
 
     return [

@@ -23,7 +23,9 @@
     "autoload": {
         "files": [
             "src/Cli.php",
-            "src/Engine.php"
+            "src/Engine.php",
+            "src/Games/Even.php",
+            "src/Games/Calc.php"
         ],
         "psr-4": {
             "Games\\": "src/Games/"
