@@ -6,18 +6,14 @@ use function cli\prompt;
 const MAX_WINS = 3;
 const MAX_RANDOM_NUMBER = 99;
 
-function runGame(string $description, $generateRound): void
+function runGame(string $description, array $roundData): void
 {
     $name = hello();
     line($description);
     
     $winCounter = 0;
     
-    while ($winCounter < MAX_WINS) {
-        $round = $generateRound();
-        $question = $round['question'];
-        $correctAnswer = $round['answer'];
-
+    foreach ($roundData as $question => $correctAnswer) {
         $userAnswer = prompt("Question: {$question}");
         if ($correctAnswer == $userAnswer) {
             $winCounter++;
