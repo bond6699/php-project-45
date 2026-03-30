@@ -14,3 +14,7 @@
 ## Game GCD (Greatest common divisor)
 
 [![asciicast](https://asciinema.org/a/Nlsmlbm3ymDcfTpA.svg)](https://asciinema.org/a/Nlsmlbm3ymDcfTpA)
+
+## Game Progression 
+
+[![asciicast](https://asciinema.org/a/ad1o6DeKt9OrwlgY.svg)](https://asciinema.org/a/ad1o6DeKt9OrwlgY)
