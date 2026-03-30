@@ -10,8 +10,8 @@ function generateCalcRounds(): array
     $data = [];
     while (count($data) !== 3) {
         $operations = ['+', '-', '*'];
-        $num1 = rand(1, MAX_RANDOM_NUMBER);
-        $num2 = rand(1, MAX_RANDOM_NUMBER);
+        $num1 = random_int(1, MAX_RANDOM_NUMBER);
+        $num2 = random_int(1, MAX_RANDOM_NUMBER);
         $operation = $operations[array_rand($operations)];
 
         switch ($operation) {
