@@ -10,3 +10,7 @@
 ## Game Calc
 
 [![asciicast](https://asciinema.org/a/1DIXOlMFiVZPOYmM.svg)](https://asciinema.org/a/1DIXOlMFiVZPOYmM)
+
+## Game GCD (Greatest common divisor)
+
+[![asciicast](https://asciinema.org/a/Nlsmlbm3ymDcfTpA.svg)](https://asciinema.org/a/Nlsmlbm3ymDcfTpA)
