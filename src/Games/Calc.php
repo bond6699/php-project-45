@@ -4,11 +4,13 @@ namespace Games;
 
 use function runGame;
 
-
-function generateCalcRounds(): array
+function generateCalcRounds(): void
 {
     $data = [];
-    while (count($data) !== 3) {
+
+    $rounds = 3;
+
+    while (count($data) !== $rounds) {
         $operations = ['+', '-', '*'];
         $num1 = random_int(1, MAX_RANDOM_NUMBER);
         $num2 = random_int(1, MAX_RANDOM_NUMBER);
@@ -27,16 +29,12 @@ function generateCalcRounds(): array
             default:
                 $answer = 'Incorrect operation!';
         }
+
         $data["{$num1} {$operation} {$num2}"] =  $answer;
     }
 
-    return $data;
-}
-
-function runCalcGame(): void
-{
     runGame(
         'What is the result of the expression?',
-        generateCalcRounds()
+        $data
     );
 }

@@ -23,7 +23,7 @@ function runGame(string $description, array $roundData): void
             line("Let's try again, {$name}!");
             return;
         }
-
     }
+
     line("Congratulations, {$name}!");
 }
