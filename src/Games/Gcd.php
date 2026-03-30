@@ -18,7 +18,6 @@ function getGcd(int $num1, int $num2): int
 
 function generateGcdRound(): array
 {
-
     $data = [];
     while (count($data) !== 3) {
         $num1 = random_int(1, MAX_RANDOM_NUMBER);
