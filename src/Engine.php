@@ -5,6 +5,7 @@ use function cli\prompt;
 
 const MAX_WINS = 3;
 const MAX_RANDOM_NUMBER = 99;
+const ROUNDS = 3;
 
 function runGame(string $description, array $roundData): void
 {

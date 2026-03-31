@@ -3,9 +3,6 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
-use function Games\generateProgressionRound;
+use function Games\runProgressionRound;
 
-runGame(
-    'What number is missing in the progression?',
-    generateProgressionRound()
-);
+runProgressionRound();

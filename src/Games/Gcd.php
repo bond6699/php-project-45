@@ -16,14 +16,19 @@ function getGcd(int $num1, int $num2): int
     }
 }
 
-function generateGcdRound(): array
+function runGcdRound(): void
 {
     $data = [];
-    while (count($data) !== 3) {
+    
+    while (count($data) !== ROUNDS) {
         $num1 = random_int(1, MAX_RANDOM_NUMBER);
         $num2 = random_int(1, MAX_RANDOM_NUMBER);
         $answer = getGcd($num1, $num2);
         $data["{$num1} {$num2}"] = $answer;
     }
-    return $data;
+    
+    runGame(
+        'Find the greatest common divisor of given numbers.',
+        $data
+    );
 }

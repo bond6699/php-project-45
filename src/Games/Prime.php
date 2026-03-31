@@ -14,15 +14,21 @@ function isPrime($number) {
             return false;
         }
     }
+    
     return true;
 }
 
-function generatePrimeRound(): array
+function runPrimeRound(): void
 {
     $data = [];
-    while (count($data) !== 3) {
+
+    while (count($data) !== ROUNDS) {
         $number = random_int(1, 99);
         $data[$number] = isPrime($number) ? 'yes' : 'no';
     }
-    return $data;
+
+    runGame(
+        'Answer "yes" if given number is prime. Otherwise answer "no".',
+        $data
+    );
 }

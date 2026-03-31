@@ -3,9 +3,6 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
-use function Games\generateEvenRounds;
+use function Games\runEvenRounds;
 
-runGame(
-    'Answer "yes" if the number is even, otherwise answer "no".',
-    generateEvenRounds()
-);
+runEvenRounds();

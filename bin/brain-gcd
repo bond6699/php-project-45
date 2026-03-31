@@ -3,9 +3,6 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
-use function Games\generateGcdRound;
+use function Games\runGcdRound;
 
-runGame(
-    'Find the greatest common divisor of given numbers.',
-    generateGcdRound()
-);
+runGcdRound();

@@ -3,9 +3,6 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
-use function Games\generatePrimeRound;
+use function Games\runPrimeRound;
 
-runGame(
-    'Answer "yes" if given number is prime. Otherwise answer "no".',
-    generatePrimeRound()
-);
+runPrimeRound();

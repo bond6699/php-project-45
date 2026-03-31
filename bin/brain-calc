@@ -3,10 +3,6 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
-use function Games\generateCalcRounds;
+use function Games\runCalcRounds;
 
-
-runGame(
-    'What is the result of the expression?',
-    generateCalcRounds()
-);
+runCalcRounds();
