@@ -11,9 +11,9 @@ function runGame(string $description, array $roundData): void
 {
     $name = hello();
     line($description);
-    
+
     $winCounter = 0;
-    
+
     foreach ($roundData as $question => $correctAnswer) {
         $userAnswer = prompt("Question: {$question}");
         if ($correctAnswer == $userAnswer) {
@@ -24,7 +24,6 @@ function runGame(string $description, array $roundData): void
             line("Let's try again, {$name}!");
             return;
         }
-
     }
     line("Congratulations, {$name}!");
 }

@@ -7,20 +7,20 @@ use function runGame;
 function runCalcRounds(): void
 {
     $data = [];
-    
+
     while (count($data) !== ROUNDS) {
         $operations = ['+', '-', '*'];
         $num1 = random_int(1, MAX_RANDOM_NUMBER);
         $num2 = random_int(1, MAX_RANDOM_NUMBER);
         $operation = $operations[array_rand($operations)];
 
-        $answer = match($operation) {
+        $answer = match ($operation) {
             '*' => $num1 * $num2,
             '+' => $num1 + $num2,
             '-' => $num1 - $num2,
             default => 'Incorrect operation!',
         };
-        
+
         $data["{$num1} {$operation} {$num2}"] =  $answer;
     }
 
@@ -29,4 +29,3 @@ function runCalcRounds(): void
         $data
     );
 }
-
