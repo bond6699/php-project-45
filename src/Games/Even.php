@@ -10,8 +10,7 @@ function runEvenRounds(): void
 
     while (count($data) !== ROUNDS) {
         $number = random_int(1, MAX_RANDOM_NUMBER);
-        $answer = $number % 2 === 0 ? "yes" : "no";
-        $data[$number] = (string)$answer;
+        $data[$number] = $number % 2 === 0 ? "yes" : "no";
     }
 
     runGame(
