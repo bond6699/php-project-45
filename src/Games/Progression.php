@@ -23,14 +23,14 @@ function runProgressionRound(): void
     while (count($data) !== 3) {
         $progression = generateProgression();
 
-        if (empty($progression)) {
+        if (count($progression) === 0) {
             continue;
         }
 
         $index = random_int(0, count($progression) - 1);
         $answer = $progression[$index];
         $progression[$index] = "..";
-        $data[implode(" ", $progression)] = $answer;
+        $data[implode(" ", $progression)] = (string)$answer;
     }
 
     runGame(

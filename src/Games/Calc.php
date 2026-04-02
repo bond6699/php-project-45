@@ -20,7 +20,7 @@ function runCalcRounds(): void
             '-' => $num1 - $num2
         };
 
-        $data["{$num1} {$operation} {$num2}"] =  $answer;
+        $data["{$num1} {$operation} {$num2}"] =  (string)$answer;
     }
 
     runGame(
