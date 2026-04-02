@@ -9,7 +9,7 @@ function generateProgression(): array
     $startProgression = random_int(5, 10);
     $stepProgression = random_int(2, 5);
 
-    for ($i = 1; $i <= $lenProgression + 1; $i++) {
+    for ($i = 0; $i <= $lenProgression + 1; $i++) {
         $progressionData[] = $startProgression + $i * $stepProgression;
     }
 

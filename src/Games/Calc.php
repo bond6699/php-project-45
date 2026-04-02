@@ -17,8 +17,7 @@ function runCalcRounds(): void
         $answer = match ($operation) {
             '*' => $num1 * $num2,
             '+' => $num1 + $num2,
-            '-' => $num1 - $num2,
-            default => 'Incorrect operation!',
+            '-' => $num1 - $num2
         };
 
         $data["{$num1} {$operation} {$num2}"] =  $answer;
