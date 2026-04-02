@@ -23,7 +23,7 @@ function runProgressionRound(): void
     while (count($data) !== 3) {
         $progression = generateProgression();
 
-        if (empty($progression)) {
+        if ($progression === []) {
             continue;
         }
 
