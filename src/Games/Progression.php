@@ -9,7 +9,7 @@ function generateProgression(): array
     $startProgression = random_int(5, 10);
     $stepProgression = random_int(2, 5);
 
-    for ($i = 0; $i <= $lenProgression + 1; $i++) {
+    for ($i = 0; $i < $lenProgression; $i++) {
         $progressionData[] = $startProgression + $i * $stepProgression;
     }
 
@@ -22,6 +22,11 @@ function runProgressionRound(): void
 
     while (count($data) !== 3) {
         $progression = generateProgression();
+
+        if (empty($progression)) {
+            continue;
+        }
+
         $index = random_int(0, count($progression) - 1);
         $answer = $progression[$index];
         $progression[$index] = "..";

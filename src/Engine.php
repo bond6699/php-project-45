@@ -16,7 +16,7 @@ function runGame(string $description, array $roundData): void
 
     foreach ($roundData as $question => $correctAnswer) {
         $userAnswer = prompt("Question: {$question}");
-        if ($correctAnswer == $userAnswer) {
+        if ((string)$correctAnswer === (string)$userAnswer) {
             $winCounter++;
             line('Correct!');
         } else {
