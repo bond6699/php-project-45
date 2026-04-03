@@ -12,12 +12,9 @@ function runGame(string $description, array $roundData): void
     $name = hello();
     line($description);
 
-    $winCounter = 0;
-
     foreach ($roundData as $question => $correctAnswer) {
         $userAnswer = prompt("Question: {$question}");
         if ($correctAnswer === $userAnswer) {
-            $winCounter++;
             line('Correct!');
         } else {
             line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'.");

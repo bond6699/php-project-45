@@ -49,10 +49,10 @@ make install
 ## 📸 Примеры игр
 
 ### Brain Even
-[![Brain Even Demo](https://asciinema.org/a/tjhwZy0QeWesq2fp.svg)](https://asciinema.org/a/tjhwZy0QeWesq2fp)
+[![Brain Even Demo](https://asciinema.org/a/m3frGp3VMzfRBeLp.svg)](https://asciinema.org/a/m3frGp3VMzfRBeLp)
 
 ### Brain Calc
-[![Brain Calc Demo](https://asciinema.org/a/1DIXOlMFiVZPOYmM.svg)](https://asciinema.org/a/1DIXOlMFiVZPOYmM)
+[![Brain Calc Demo](https://asciinema.org/a/itQh4VhqNUTqc2he.svg)](https://asciinema.org/a/itQh4VhqNUTqc2he)
 
 ### Brain GCD
 [![Brain GCD Demo](https://asciinema.org/a/Nlsmlbm3ymDcfTpA.svg)](https://asciinema.org/a/Nlsmlbm3ymDcfTpA)

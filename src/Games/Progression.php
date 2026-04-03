@@ -20,7 +20,7 @@ function runProgressionRound(): void
 {
     $data = [];
 
-    while (count($data) !== 3) {
+    while (count($data) !== ROUNDS) {
         $progression = generateProgression();
 
         if ($progression === []) {
